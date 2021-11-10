@@ -1,0 +1,17 @@
+my_form.myform_controller_table:
+  path: 'my_form'
+  defaults:
+    _controller: '\Drupal\my_form\controller\MyformController::Table'
+    _title: 'Table Details'
+  requirements:
+   _permission: 'access content' 
+
+my_form.myform_form:
+  path: 'my_form/form/data'
+  defaults:
+    _form: '\Drupal\my_form\Form\ResumeForm'
+    _title: 'ADD User'
+  requirements:
+   _permission: 'TRUE'    
+
+

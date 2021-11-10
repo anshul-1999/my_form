@@ -1,0 +1,20 @@
+<?php
+function my_form_schema()
+{
+	$schema['my_form'] = ['description'=>'This form is used to insert details of user',
+
+	'fields'=>['id'=> ['description'=>'Primary Key','type'=>'serial','not null'=>TRUE,'unsigned'=>TRUE,],
+ 
+ 'name'=>['description'=>'Name','type'=>'varchar','length'=>'40','not null'=>TRUE,],
+ 
+ 'age'=>['description'=>'Age','type'=>'varchar','length'=>'40','not null'=>TRUE,],	
+ 
+ 'email'=>['description'=>'Email','type'=>'varchar','length'=>'100','not null'=>TRUE,],
+ 
+ 'gender'=>['description'=>'Gender','type'=>'varchar','length'=>'20','not null'=>TRUE,],],
+
+ 'primary key'=>['id'],];
+ return $schema;
+}
+
+?>
